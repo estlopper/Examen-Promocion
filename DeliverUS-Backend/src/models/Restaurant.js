@@ -77,10 +77,10 @@ const loadModel = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
       defaultValue: new Date()
     },
-    discount: {
+    isPromoted: {
       allowNull: false,
-      type: DataTypes.INTEGER,
-      defaultValue: 0
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
     }
   }, {
     sequelize,

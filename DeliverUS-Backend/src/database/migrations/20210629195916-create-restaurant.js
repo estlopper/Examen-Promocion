@@ -87,10 +87,10 @@ module.exports = {
           key: 'id'
         }
       },
-      discount: {
+      isPromoted: {
         allowNull: false,
-        type: Sequelize.INTEGER,
-        defaultValue: 0
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
       }
     })
   },
