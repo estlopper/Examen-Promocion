@@ -94,9 +94,9 @@ export default function RestaurantsScreen ({ navigation, route }) {
               styles.actionButton
             ]}>
           <View style={[{ flex: 1, flexDirection: 'row', justifyContent: 'center' }]}>
-            <MaterialCommunityIcons name='star' color={'white'} size={20}/>
+            <MaterialCommunityIcons name={item.isPromoted ? 'star-outline' : 'star'} color={'white'} size={20}/>
             <TextRegular textStyle={styles.text}>
-              Promote
+              {item.isPromoted ? 'Demote' : 'Promote'}
             </TextRegular>
           </View>
         </Pressable>
